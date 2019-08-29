@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Psychic-Game</title>
+</head>
+<body>
+    <h1>The Psychic Game</h1>
+    <p>Guess what letter I am thinking of?</p>
+    
+    <script type="text/javascript">
+        var alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+        var wins = 0;
+        var loses = 0;
+        var guessesLeft = 0; 
+        var guessesSoFar = 10;
+
+// Program runs whenever user enters data currently registers as 0
+        document.onkeyup = function(event) {
+
+// User data entry 
+        var user = event.key;
+
+// Randomly chooses from array, aka computer's guess
+        var compGuess = alphabet[Math.floor(Math.random() * alphabet.length)];
+
+        console.log("user: " + user);
+        console.log("compGuess: " + compGuess);
+
+// Alerts with every data entry letter or number, how to recognized just numbers as null void???
+        if (event.key !== alphabet) {
+            alert("Please enter a letter from alphabet");
+        }
+
+        };
+    </script>
+    
+</body>
+</html>
+<!-- var guessesSoFar how do I stop after 10 tries, perhaps with an alert???
+how to null or void numbers/symbols??? 
+Wins: (# of times the user has guessed the letter correctly)
+Losses: (# of times the user has failed to guess the letter correctly after exhausting all guesses)
+Guesses Left: (# of guesses left. This will update)
+Your Guesses So Far: (the specific letters that the user typed. Display these until the user either wins or loses.)
+When the player wins, increase the Wins counter and start the game over again (without refreshing the page).
+When the player loses, increase the Losses counter and restart the game without a page refresh (just like when the user wins). --> -->
