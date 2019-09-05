@@ -21,6 +21,7 @@ var lettersGuessedDisplayed = document.getElementById("total-text");
 var computerRandom = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 
 console.log("letter picked;", computerRandom)
+
 // Program runs whenever user enters data currently registers as 0
 document.onkeyup = function (event) {
 
@@ -62,9 +63,9 @@ document.onkeyup = function (event) {
 
     // Diplays the use and computer guesses, along with wins, losses, toal and remaining guesses
     userDisplayed.textContent = "You chose the letter: " + user;
-    computerChoice.textContent = "Computer chose the letter: " + computerRandom;
-    winsDisplayed.textContent = "Total wins: " + wins;
-    lossesDisplayed.textContent = "Total losses: " + losses;
+    // computerChoice.textContent = "Computer chose the letter: " + computerRandom;
+    winsDisplayed.textContent = wins;
+    lossesDisplayed.textContent = losses;
     guessesLeftDisplayed.textContent = "You have: " + left + " guesses remaining";
     lettersGuessedDisplayed.textContent = "Your guesses: " + letterBank;
 
