@@ -2,7 +2,7 @@
 
 
 ## Screen Shot
-<img src="assets/images/Screen.png" alt="screenshot">
+<img src="assets/css/psychicScreenshot.png" alt="screenshot">
 
 ## Technologies Used
 - HTML - used to create elements on the DOM
